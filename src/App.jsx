@@ -3,11 +3,9 @@ import { useDispatch, Provider } from 'react-redux';
 import './App.css';
 import authService from './appwrite/auth.js';
 import { login, logout } from './store/authSlice.js';
-import { Header, Footer } from './components/index.js';
+import { Header, Footer, } from './components/index.js';
 import { Outlet } from 'react-router-dom';
 import store from './store/store.js';
-
-
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -32,7 +30,7 @@ function App() {
       <div className='w-full block'>
         <Header />
         <main>
-          TODO: <Outlet />
+         Todo:<Outlet />
         </main>
         <Footer />
       </div>
